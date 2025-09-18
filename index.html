@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Booster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Mood Booster</h1>
+    <p>Select your mood:</p>
+    <div class="mood-buttons">
+      <button onclick="showMood('happy')">😊 Happy</button>
+      <button onclick="showMood('sad')">😢 Sad</button>
+      <button onclick="showMood('chill')">😌 Chill</button>
+      <button onclick="showMood('angry')">😡 Angry</button>
+    </div>
+
+    <div id="output">
+      <h2 id="moodTitle"></h2>
+      <p id="quoteText"></p>
+      <div id="musicPlayer"></div>
+      <div id="videoPlayer"></div>
+    </div>
+  </div>
+
+  <script src="quotes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
